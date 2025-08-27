@@ -1,25 +1,11 @@
-// How to create nested Element in REACT
-
-/* 
-<div id="parent"> 
-    <div id="child">
-        <h1> i am h1 tag </h1>
-        <h2> i am h2 tag</h2>
-    </div>
-    <div id="child2">
-        <h1> i am h1 tag</h1>
-        <h2> i am h2 tag</h2>
-    </div>
-</div> 
-*/
-
-// ReactElement(object) = HTML (browser Understanding)
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 // like below we create nested element in react
 
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "i am h1 tag"),
+    React.createElement("h1", {}, "This is namaste react"),
     React.createElement("h2", {}, "i am h2 tag"),
   ]),
   React.createElement("div", { id: "child" }, [
